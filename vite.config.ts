@@ -13,6 +13,11 @@ export default defineConfig({
       { find: '@sections', replacement: '/src/components/sections' },
       { find: '@data-service', replacement: '/src/utils/data-service.ts' },
       { find: '@service', replacement: '/src/service' },
+      { find: '@modals', replacement: '/src/components/modals' },
+      { find: '@global-interface', replacement: '/src/interface/global.ts' },
+      { find: '@auth-interface', replacement: '/src/interface/auth.ts' },
+      { find: '@notification', replacement: '/src/utils/notification.ts' },
+      { find: '@validation', replacement: '/src/utils/validations.ts' },
     ]
   }
 })

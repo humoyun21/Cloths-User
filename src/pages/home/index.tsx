@@ -3,6 +3,7 @@ const index = () => {
   return (
     <>
       <Layout />
+      
     </>
   );
 };

@@ -1,3 +1,3 @@
 import Products from './products'
-
-export {Products}
+import auth from './auth'
+export {Products, auth}

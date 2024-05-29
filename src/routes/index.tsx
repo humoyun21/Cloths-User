@@ -7,17 +7,18 @@ import {
 
 import App from "../App";
 
-import { Home, Product, Main } from "@pages";
+import { Home, Product, Main, Signin, Signup, LikedProducts } from "@pages";
 const index = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<App />}>
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/" element={<Home />}>
           <Route index element={<Main />} />
           <Route path="/product/:id" element={<Product />} />
+          <Route path="/liked-products" element={<LikedProducts />} />
         </Route>
-        {/* <Route path="/signup" element={<SginUp/>}/>
-              <Route path="/signin" element={<SignIn/>}/> */}
       </Route>
     )
   );

@@ -18,6 +18,22 @@ const useProductStore = create<ProductStore>(() => ({
     } catch (error) {
       console.error(error);
     }
+  },
+  likeProduct: async (id) => {
+    try {
+      const response = await Products.like_product(id);
+      return response;
+    } catch (error) {
+      console.error(error);
+    }
+  },
+  getLikedProducts: async () => {
+    try {
+      const response = await Products.get_liked_products();
+      return response;
+    } catch (error) {
+      console.error(error);
+    }
   }
 }));
 

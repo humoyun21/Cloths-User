@@ -22,6 +22,11 @@
             "@service": ["./src/service"],
             "@context": ["./src/context"],
             "@data-service": ["./src/utils/data-service.ts"],
+            "@modals": ["./src/components/modals"],
+            "@global-interface": ["./src/interface/global.ts"],
+            "@auth-interface": ["./src/interface/auth.ts"],
+            "@notification": ["./src/utils/notification.ts"],
+            "@validation": ["./src/utils/validations.ts"],
 
             
         },
